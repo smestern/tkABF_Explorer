@@ -170,7 +170,7 @@ class TraceInfoFrame(tk.Frame):
 
     def update_plot(self):
         print("update plot called")
-        self.controller_ref.update_plot("")
+        self.controller_ref.update_plot_main("")
 
     def _toggle_mean(self):
         print(f"the value of the toggle is {self.plot_mean_sweeps_option.get()}\n")

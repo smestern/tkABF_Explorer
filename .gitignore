@@ -3,3 +3,5 @@
 __pycache__/
 .pytest_cache/
 testing_fn.py
+/env
+/.vs
