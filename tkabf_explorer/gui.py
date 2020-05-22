@@ -130,6 +130,8 @@ class TkAbfExplorer(tk.Tk):
     def update_plot_main(self, event):
         self._make_metadata_dict()
         if self.current_meta_dict["file_path"] is not None:
+            if self.current_meta_dict["bottom_plot"] is None:
+                self.current_meta_dict["bottom_plot"] = 'c'
             self._build_plot_map()
             self.plot_frame.update_plot()
         else:
